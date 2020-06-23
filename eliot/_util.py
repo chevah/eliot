@@ -61,7 +61,7 @@ def load_module(name, original_module):
         if getattr(sys, "frozen", False):
             raise NotImplementedError("Can't load modules on Python 2 with PyInstaller")
         path = original_module.__file__
-        if path.endswith(".pyc") or path.endswith(".pyo"):
+        if path.endswith(b".pyc") or path.endswith(b".pyo"):
             path = path[:-1]
         with open(path) as f:
             source = f.read()

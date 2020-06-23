@@ -29,8 +29,7 @@ setup(
         'Topic :: System :: Logging',
     ],
     name='eliot',
-    version=versioneer.get_version(),
-    cmdclass=versioneer.get_cmdclass(),
+    version='1.7.0.chevah1',
     description="Logging library that tells you why it happened",
     python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
     install_requires=[
